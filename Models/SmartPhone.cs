@@ -5,8 +5,12 @@ using System.Threading.Tasks;
 
 namespace PooDesafioDio.Models
 {
-    public class Smartphone
+    public abstract class Smartphone
     {
-        
+        public string Numero { get; set; }
+        protected string Modelo;
+        protected string IMEI;
+        protected int Memoria;
+
     }
 }
