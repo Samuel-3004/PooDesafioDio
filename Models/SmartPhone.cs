@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PooDesafioDio.Models
 {
-    public class SmartPhone
+    public class Smartphone
     {
         
     }
