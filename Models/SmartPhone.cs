@@ -7,6 +7,14 @@ namespace PooDesafioDio.Models
 {
     public abstract class Smartphone
     {
+        public Smartphone(string numero, string modelo, string imei, int memoria)
+        {
+            Numero = numero;
+            Modelo = modelo;
+            IMEI = imei;
+            Memoria = memoria;
+        }
+        
         public string Numero { get; set; }
         protected string Modelo;
         protected string IMEI;
@@ -14,7 +22,7 @@ namespace PooDesafioDio.Models
 
         public void Ligar()
         {
-            Console.WriteLine($"Estou fazendo uma ligação do telefono: {Numero} .");
+            Console.WriteLine($"Estou fazendo uma ligação do telefone de número {Numero}.");
         }
 
         public void ReceberLigacao()
